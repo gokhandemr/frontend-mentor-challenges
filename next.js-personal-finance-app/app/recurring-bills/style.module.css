@@ -1,0 +1,45 @@
+/* Recurring Bills Page */
+.leftSide {
+    width: 31.8%;
+    margin-right: 24px;
+}
+
+.leftSide>:nth-child(1) {
+    margin-bottom: 24px;
+}
+
+.rightSide {
+    width: calc(100% - (31.8% + 24px));
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 1023px) {
+    .leftSide {
+        width: 100%;
+        margin: 0 0 24px 0;
+    }
+
+    .leftSide>:nth-child(n) {
+        width: calc(50% - 24px);
+    }
+
+    .rightSide {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .leftSide {
+        flex-direction: column;
+    }
+
+    .leftSide,
+    .leftSide>:nth-child(n) {
+        width: 100%;
+    }
+
+    .rightSide {
+        width: 100%;
+    }
+}

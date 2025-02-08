@@ -1,0 +1,159 @@
+/* List Container */
+.listContainer {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.listContainerHeader {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey-100);
+}
+
+.listContainer ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.listContainer ul li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid var(--grey-100);
+}
+
+.listContainer ul li>:nth-child(1) {
+    width: 56.515%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: var(--text-preset-4);
+    font-weight: bold;
+}
+
+.listContainer ul li>:nth-child(1) img {
+    margin-right: 16px;
+    border-radius: 50%;
+}
+
+.listContainerHeader>:nth-child(1) {
+    width: 56.515% !important;
+    margin: 0 !important;
+}
+
+.listContainerHeader>:nth-child(1),
+.listContainerHeader>:nth-child(2),
+.listContainer ul li>:nth-child(2),
+.listContainerHeader>:nth-child(3),
+.listContainer ul li>:nth-child(3) {
+    width: 14.592%;
+    margin-right: 32px;
+    text-align: left;
+    font-size: var(--text-preset-5);
+    color: var(--grey-500);
+}
+
+.listContainerHeader>:nth-child(4),
+.listContainer ul li>:nth-child(4) {
+    width: 26.762%;
+    text-align: right;
+    font-size: var(--text-preset-4);
+    font-weight: bold;
+}
+
+.listContainerHeader>:nth-child(4) {
+    font-size: var(--text-preset-5);
+    font-weight: normal;
+}
+
+.listContainer ul li>:nth-child(4).green {
+    color: var(--green);
+}
+
+.listContainer ul li:last-child {
+    border: 0;
+}
+
+.emptyList {
+    padding: 12px 16px;
+    font-size: var(--text-preset-5);
+    color: var(--grey-500);
+}
+
+.listContainer .paid>:nth-child(3) {
+    display: flex;
+    color: var(--green);
+}
+
+.paid>:nth-child(3)::after {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    display: flex;
+    content: '';
+    background: url(../../../public/icon-bill-paid.svg) no-repeat;
+}
+
+.listContainer .dueSoon>:nth-child(3) {
+    display: flex;
+    color: var(--red);
+}
+
+.dueSoon>:nth-child(3)::after {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    display: flex;
+    content: '';
+    background: url(../../../public/icon-bill-due.svg) no-repeat;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+
+    /* List Header */
+    .listContainerHeader {
+        display: none;
+    }
+
+    /* List Main */
+    .listContainer ul li {
+        flex-wrap: wrap;
+        position: relative;
+        padding: 16px 0;
+    }
+
+    .listContainer ul li>:nth-child(1) {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .listContainer ul li>:nth-child(2),
+    .listContainer ul li>:nth-child(3) {
+        width: 50%;
+        padding-left: 56px;
+        margin: 0;
+        margin-top: -24px;
+    }
+
+    .listContainer ul li>:nth-child(2) {
+        text-align: left;
+    }
+
+    .listContainer ul li>:nth-child(3) {
+        text-align: right;
+    }
+
+    .listContainer ul li>:nth-child(4) {
+        position: absolute;
+        top: 16px;
+        right: 0;
+    }
+}

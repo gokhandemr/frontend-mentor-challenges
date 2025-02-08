@@ -1,0 +1,42 @@
+/* Overview Page */
+.top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.top>:nth-child(n) {
+    width: calc(33.333% - 16px);
+}
+
+.leftSide {
+    width: 57.36%;
+}
+
+.rightSide {
+    width: 40.378%;
+}
+
+
+
+/* Responsive */
+@media only screen and (max-width: 1023px) {
+
+    .leftSide,
+    .rightSide {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .top {
+        flex-direction: column;
+    }
+
+    .top>:nth-child(n) {
+        width: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer button {
+    width: calc(50% - 8px);
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-preset-4);
+    font-weight: bold;
+    background-color: var(--beige-100);
+    border-radius: 8px;
+    transition: all .3s;
+}
+
+.footer button:hover {
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--beige-500);
+}

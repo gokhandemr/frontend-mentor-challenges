@@ -1,0 +1,81 @@
+.container {
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 8px;
+}
+
+.container h4 {
+    font-size: var(--text-preset-4);
+    margin-bottom: 20px;
+}
+
+.container ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.container ul li {
+    font-size: var(--text-preset-5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #c4c4c47e;
+}
+
+.container ul li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: 0;
+}
+
+.container ul li>:nth-child(1) {
+    color: var(--grey-500);
+}
+
+.container ul li>:last-child {
+    font-weight: bold;
+}
+
+.container ul li:last-child p {
+    color: var(--red) !important;
+}
+
+
+/* Loading CSS */
+.loader,
+.loader>:nth-child(n) {
+    background: linear-gradient(90deg,
+            #fff 25%,
+            #f0f0f0d5 50%,
+            #fff 75%);
+    background-size: 200% 100%;
+    border-radius: 4px;
+    animation: loading 1.5s infinite;
+}
+
+.loader>:nth-child(1) {
+    width: 100%;
+    height: 16px;
+    margin-bottom: 32px;
+}
+
+.loader>:nth-child(2) {
+    width: 100%;
+    height: 108px;
+}
+
+@keyframes loading {
+    from {
+        background-position: 200% 0;
+    }
+
+    to {
+        background-position: -200% 0;
+    }
+}

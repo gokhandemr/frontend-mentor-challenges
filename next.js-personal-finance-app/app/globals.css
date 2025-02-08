@@ -1,0 +1,169 @@
+:root {
+  /* Colors */
+  --beige-500: #98908B;
+  --beige-100: #F8F4F0;
+  --grey-900: #201F24;
+  --grey-500: #696868;
+  --grey-300: #B3B3B3;
+  --grey-100: #F2F2F2;
+  --green: #277C78;
+  --yellow: #F2CDAC;
+  --cyan: #82C9D7;
+  --navy: #626070;
+  --red: #C94736;
+  --purple: #826CB0;
+  --purple-second: #AF81BA;
+  --turquoise: #597C7C;
+  --brown: #93674F;
+  --magenta: #934F6F;
+  --blue: #3F82B2;
+  --navy-grey: #97A0AC;
+  --army-green: #7F9161;
+  --gold: #CAB361;
+  --orange: #BE6C49;
+  --white: #FFFFFF;
+  /* Sizes */
+  --text-preset-1: 32px;
+  --text-preset-2: 20px;
+  --text-preset-3: 16px;
+  --text-preset-4: 14px;
+  --text-preset-5: 12px;
+  /* Line Heights */
+  --text-preset-line-height-120: 120%;
+  --text-preset-line-height-150: 150%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  width: 100%;
+  font-size: var(--text-preset-1);
+  margin-bottom: 42px;
+}
+
+html,
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--grey-900);
+  background: var(--beige-100);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  width: calc(100% - 300px);
+  margin-left: 300px;
+  padding: 32px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition: all 1s ease;
+}
+
+main.large-main {
+  width: calc(100% - 90px);
+  margin-left: 90px;
+}
+
+/* Loading Container */
+.loading-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: var(--white);
+}
+
+.loading-container img {
+  height: auto;
+  animation: loading 2s infinite;
+  filter: brightness(.2);
+  margin-bottom: 24px;
+}
+
+@keyframes loading {
+  from {
+    opacity: .1;
+
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.loader {
+  width: 350px;
+  height: 4.8px;
+  display: inline-block;
+  filter: brightness(.4);
+  background: rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+}
+
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  width: 0;
+  height: 4.8px;
+  background: #FFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: animFw 10s linear infinite;
+}
+
+@keyframes animFw {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+
+
+
+/* Responsive */
+@media only screen and (max-width: 1023px) {
+
+  main,
+  main.large-main {
+    width: 100%;
+    margin: 0;
+    padding: 24px 16px 100px 16px;
+  }
+}

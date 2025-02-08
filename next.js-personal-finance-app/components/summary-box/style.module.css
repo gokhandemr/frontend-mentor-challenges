@@ -1,0 +1,55 @@
+.boxContainer {
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 12px;
+}
+
+.boxContainer img {
+    margin-bottom: 32px;
+}
+
+.boxContainer .title {
+    font-size: var(--text-preset-4);
+    margin-bottom: 12px;
+}
+
+.boxContainer .amount {
+    font-size: var(--text-preset-1);
+    font-weight: bold;
+}
+
+.boxContainer.dark {
+    background-color: var(--grey-900);
+    color: var(--white);
+}
+
+/* Loading CSS */
+.loader,
+.loader>:nth-child(n) {
+    background: linear-gradient(90deg,
+            #fff 25%,
+            #f0f0f0d5 50%,
+            #fff 75%);
+    background-size: 200% 100%;
+    border-radius: 4px;
+    animation: loading 1.5s infinite;
+}
+
+.loader>:nth-child(n) {
+    height: 38px;
+    margin-bottom: 32px;
+}
+
+@keyframes loading {
+    from {
+        background-position: 200% 0;
+    }
+
+    to {
+        background-position: -200% 0;
+    }
+}

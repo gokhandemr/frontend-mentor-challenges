@@ -1,0 +1,36 @@
+.container {
+    width: 100%;
+    height: 240px;
+    background: #181818;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-bottom: 160px;
+    animation: title .4s;
+}
+
+@keyframes title {
+    from {
+        height: 0;
+    }
+
+    to {
+        top: 240px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .container {
+        margin-bottom: 120px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        height: 102px;
+        margin-bottom: 64px;
+        font-size: 28px;
+    }
+}

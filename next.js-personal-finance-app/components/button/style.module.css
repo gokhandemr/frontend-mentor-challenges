@@ -1,0 +1,21 @@
+.buttonContainer {
+    min-width: 130px;
+    height: 53px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 32px;
+    right: 40px;
+    font-size: var(--text-preset-4);
+    font-weight: bold;
+    background-color: var(--grey-900);
+    border-radius: 8px;
+    color: var(--white);
+    transition: all .3s;
+}
+
+.buttonContainer:hover {
+    background-color: var(--grey-500);
+}

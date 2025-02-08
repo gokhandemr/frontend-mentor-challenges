@@ -1,0 +1,27 @@
+.loader {
+    width: 100%;
+}
+
+.loader>:nth-child(1) {
+    width: 200px;
+    height: 38px;
+    margin-bottom: 32px;
+    display: flex;
+    background: linear-gradient(90deg,
+            #e0e0e0 25%,
+            #f5f5f5 50%,
+            #e0e0e0 75%);
+    background-size: 200% 100%;
+    border-radius: 4px;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    from {
+        background-position: 200% 0;
+    }
+
+    to {
+        background-position: -200% 0;
+    }
+}

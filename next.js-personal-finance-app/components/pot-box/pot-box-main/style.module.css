@@ -1,0 +1,48 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    margin-bottom: 32px;
+}
+
+.mainTop,
+.mainBar,
+.mainBottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.mainTop p:first-child {
+    font-size: var(--text-preset-4);
+    color: var(--grey-500);
+}
+
+.mainTop p:last-child {
+    font-size: var(--text-preset-1);
+    font-weight: bold;
+}
+
+.mainBar {
+    width: 100%;
+    height: 8px;
+    border-radius: 8px;
+    background-color: var(--beige-100);
+}
+
+.mainBar span {
+    display: inline-block;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.mainBottom p:first-child {
+    font-size: var(--text-preset-5);
+    font-weight: bold;
+    color: var(--grey-500);
+}
+
+.mainBottom p:last-child {
+    font-size: var(--text-preset-5);
+    color: var(--grey-500);
+}

@@ -1,0 +1,18 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container>div {
+    width: calc(50% - 12px);
+    margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .container>div {
+        width: 100%;
+    }
+}
