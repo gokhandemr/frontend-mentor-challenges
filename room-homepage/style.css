@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+button {
+    background: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: hsl(0, 0%, 10%);
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    padding-left: 64px;
+    top: 64px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .logo {
+    margin-right: 48px;
+}
+
+header nav .responsive-close-button,
+header .responsive-open-button {
+    display: none;
+}
+
+header nav a {
+    margin: 0 16px;
+    position: relative;
+    color: white;
+}
+
+header nav a:hover::after {
+    content: ' ';
+    position: absolute;
+    bottom: -12px;
+    left: 25%;
+    width: 50%;
+    border-bottom: 2px solid white;
+}
+
+.banner {
+    width: 100%;
+    height: 534px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-left {
+    width: calc(100% - 600px);
+    height: 100%;
+}
+
+.banner-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-right {
+    width: 600px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-right-center {
+    margin-left: 36px;
+    margin-top: -20px;
+
+}
+
+.banner-right-center h1 {
+    width: 15ch;
+    font-size: 48px;
+    margin-bottom: 24px;
+    letter-spacing: -2px;
+}
+
+.banner-right-center p {
+    width: 46ch;
+    opacity: .5;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+.banner-right-center .shop-now {
+    display: flex;
+    align-items: center;
+    letter-spacing: 12px;
+    color: black;
+    font-weight: 700;
+}
+
+.banner-right-center .shop-now:hover,
+.banner-buttons button:hover {
+    opacity: .7;
+}
+
+.banner-right-center .shop-now span {
+    background: url('./images/icon-arrow.svg') no-repeat center;
+    width: 60px;
+    height: 24px;
+    display: block;
+}
+
+
+.banner-buttons {
+    width: 160px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.banner-buttons button {
+    width: 50%;
+    height: 100%;
+}
+
+.banner-buttons .previous-button {
+    background: url('./images/icon-angle-left.svg') #000 no-repeat center;
+}
+
+.banner-buttons .next-button {
+    background: url('./images/icon-angle-right.svg') #000 no-repeat center;
+}
+
+.about-section {
+    width: 100%;
+    height: 266px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-left {
+    width: 420px;
+    height: 100%;
+}
+
+.about-right {
+    width: 440px;
+    height: 100%;
+}
+
+.about-center {
+    width: 550px;
+    height: 100%;
+    padding: 0 24px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.about-center h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 18px;
+    margin-bottom: 16px;
+    font-weight: 800;
+}
+
+.about-center p {
+    width: 52ch;
+    opacity: .5;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -.5px;
+    font-weight: 600;
+}
+
+footer {
+    margin: 72px 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1441px) {
+    body {
+        font-size: 16px;
+    }
+
+    .banner {
+        height: 75vh;
+    }
+
+    .banner-left {
+        width: 60vw;
+    }
+
+    .banner-right {
+        width: calc(100% - 60vw);
+    }
+
+    .about-section {
+        height: 25vh;
+    }
+
+    .about-left {
+        width: calc((100% - 60vw) - 160px);
+    }
+
+    .about-right {
+        width: calc((100% - 60vw) - 160px);
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .banner-left {
+        width: calc(100% - 35%);
+    }
+
+    .banner-right {
+        width: 45%;
+    }
+
+    .about-center {
+        width: calc(20% + 160px);
+    }
+
+    .about-left,
+    .about-right {
+        width: calc(45% - 160px);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+        top: 50px;
+        padding: 0;
+    }
+
+    header .logo {
+        margin: 0;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 110px;
+        justify-content: flex-end;
+        align-items: center;
+        background: white;
+        top: -50px;
+        left: 0;
+        right: 0;
+        box-shadow: 0 1px 0 100vh #000000bf;
+        z-index: 100;
+    }
+
+    header nav a {
+        color: #000;
+        text-shadow: none;
+        font-weight: 700;
+    }
+
+    header nav .responsive-close-button {
+        z-index: 101;
+        display: block;
+        position: absolute;
+        left: 24px;
+        background: url('./images/icon-close.svg') center no-repeat;
+        width: 15px;
+        height: 15px;
+    }
+
+    header .responsive-open-button {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url('./images/icon-hamburger.svg') center no-repeat;
+        position: absolute;
+        left: 24px;
+    }
+
+    .banner {
+        height: 100vh;
+        flex-wrap: wrap;
+    }
+
+    .banner-left {
+        width: 100%;
+        height: 47vh;
+    }
+
+    .banner-right {
+        width: 100%;
+        height: 54vh;
+    }
+
+    .banner-buttons {
+        top: -55px;
+        right: 0;
+        left: unset;
+        width: 112px;
+        height: 55px;
+    }
+
+    .about-section {
+        flex-wrap: wrap;
+    }
+
+    .about-section {
+        height: auto;
+    }
+
+    .about-left,
+    .about-center,
+    .about-right {
+        width: 100%;
+        height: 33.333vh;
+    }
+
+    .about-center {
+        justify-content: center;
+    }
+
+    .banner-right-center {
+        margin-left: 24px;
+    }
+
+    .banner-right-center h1 {
+        font-size: 36px;
+    }
+
+    .banner-right-center p {
+        width: 35ch;
+    }
+}
