@@ -1,12 +1,12 @@
 ## React + Vite ile Hazırlanan Countries Uygulaması
 
-![Room Homepage ](./design/images.gif)
+![Room Homepage](./design/images.gif)
 
 Bu uygulama, dünya ülkeleri hakkında bilgi sunmayı amaçlayan bir web uygulamasıdır. Ülke adına göre arama yapabilir, koyu veya açık tema arasında geçiş yapabilir, kıtalara göre ülkeleri listeleyebilir ve seçilen bir ülkenin komşu ülkelerini görebilirsiniz.
 
-Uygulama Sayfası: https://www.frontendmentor.io/solutions/rest-countries-api-with-color-theme-switcher-react-vite-5nJ_NtNT7U
+Çözüm Sayfası: https://www.frontendmentor.io/solutions/rest-countries-api-with-color-theme-switcher-react-vite-5nJ_NtNT7U
 
-Demo: https://frontend-mentor-advanced-challenges-react-countries-app.vercel.app/
+Demo: https://advanced-countries-app.vercel.app/
 
 ---
 
@@ -28,10 +28,10 @@ Demo: https://frontend-mentor-advanced-challenges-react-countries-app.vercel.app
 ---
 
 ### Kurulum ve Kullanım:
-- **Adım 1: Klonlama:** `git clone https://github.com/gokhandemr/frontend-mentor-advanced-challenges.git`
-- **Adım 2: Proje Klasörünü Açma:** `cd frontend-mentor-advanced-challenges/react-countries-app/`
+- **Adım 1: Klonlama:** `git clone https://github.com/gokhandemr/frontend-mentor-challenges.git`
+- **Adım 2: Proje Klasörünü Açma:** `cd frontend-mentor-challenges/react-countries-app/`
 - **Adım 3: Npm Yükleme:** `npm install`
-- **Adım 4: Çalıştırma:** `npm run dev`
+- **Adım 4: Çalıştırma:** `npm run start`
 
 ---
 

@@ -6,7 +6,7 @@ Bu uygulama, kullanıcıların sosyal medya bağlantılarını tek bir ortamda l
 
 Uygulama Sayfası: https://www.frontendmentor.io/solutions/link-sharing-app-EAwmvYJitO
 
-Demo: https://link-sharing-app-khaki.vercel.app/
+Demo: https://guru-link-sharing-app.vercel.app/
 
 ---
 
@@ -30,12 +30,12 @@ Demo: https://link-sharing-app-khaki.vercel.app/
 
 ### Kurulum ve Kullanım:
 
-- **Adım 1: Klonlama:** `git clone https://github.com/gokhandemr/frontend-mentor-guru-challenges.git`
-- **Adım 2: Proje Klasörünü Açma:** `cd frontend-mentor-guru-challenges/react-link-sharing-app/`
+- **Adım 1: Klonlama:** `git clone https://github.com/gokhandemr/frontend-mentor-challenges.git`
+- **Adım 2: Proje Klasörünü Açma:** `cd frontend-mentor-challenges/react-link-sharing-app/`
 - **Adım 3: Firebase Entegrasyonu:** `Firabase projesinde size verilen 'firebaseConfig' bilgilerini 'src' klasörü ile aynı seviyede olacak şekilde '.env' dosyası açarak içine kayıt etmelisiniz.`
 - **Adım 4: .env Dosyası Örneği:** `VITE_FIRE_BASE_API_KEY=**** VITE_FIRE_BASE_AUTH_DOMAIN=**** VITE_PROJECT_ID=**** VITE_STORAGE_BUCKET=**** VITE_MESSAGING_SENDER_ID=**** VITE_APP_ID=****`
 - **Adım 5: Npm Yükleme:** `npm install`
-- **Adım 6: Çalıştırma:** `npm run dev`
+- **Adım 6: Çalıştırma:** `npm run start`
 
 ---
 

@@ -7,8 +7,8 @@ Bu proje, Frontend Mentor platformunda 'Guru' kategorisindeki Entertainment Pers
 ---
 
 ## Demo ve Challenge'a Ait Çözüm Sayfası
-* Challenge Sayfası: https://www.frontendmentor.io/solutions/personal-finance-app-nextjs-15-typescript-7ZqsYtzh7o
-* Demo: https://personal-finance-app-lake.vercel.app/
+* Çözüm Sayfası: https://www.frontendmentor.io/solutions/personal-finance-app-nextjs-15-typescript-7ZqsYtzh7o
+* Demo: https://guru-personal-finance-app.vercel.app/
 
 ---
 
@@ -42,8 +42,8 @@ Bu proje, Frontend Mentor platformunda 'Guru' kategorisindeki Entertainment Pers
 ---
 
 ## Kurulum ve Kullanım:
-* Adım 1: `git clone https://github.com/gokhandemr/frontend-mentor-guru-challenges.git`
-* Adım 2: `cd frontend-mentor-guru-challenges/next.js-personal-finance-app`
+* Adım 1: `git clone https://github.com/gokhandemr/frontend-mentor-challenges.git`
+* Adım 2: `cd frontend-mentor-challenges/next.js-personal-finance-app`
 * Adım 3: `npm install`
 * Adım 4: `npm run start`
 

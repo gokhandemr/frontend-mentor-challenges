@@ -4,9 +4,9 @@
 
 Bu proje, [Frontend Mentor](https://www.frontendmentor.io/) platformunda 'Advanced' kategorisindeki Entertainment Web App challenge'ı temel alınarak geliştirilmiştir.
 
-Challange Sayfası: https://www.frontendmentor.io/solutions/entertainment-web-app-nextjs-tmdb-api-7krBzxIGAo
+Çözüm Sayfası: https://www.frontendmentor.io/solutions/entertainment-web-app-nextjs-tmdb-api-7krBzxIGAo
 
-Demo: https://entertainment-web-app-beryl-tau.vercel.app/
+Demo: https://advanced-entertainment-web-app.vercel.app/
 
 ---
 
@@ -27,8 +27,8 @@ Demo: https://entertainment-web-app-beryl-tau.vercel.app/
 ---
 
 ### Kurulum ve Kullanım:
-- **Adım 1: Klonlama:** `git clone https://github.com/gokhandemr/frontend-mentor-advanced-challenges.git`
-- **Adım 2: Proje Klasörünü Açma:** `cd frontend-mentor-advanced-challenges/next.js-entertainment-web-app/`
+- **Adım 1: Klonlama:** `git clone https://github.com/gokhandemr/frontend-mentor-challenges.git`
+- **Adım 2: Proje Klasörünü Açma:** `cd frontend-mentor-challenges/next.js-entertainment-web-app/`
 - **Adım 3: .env Dosyası Oluşturma:** `API_SECRET_KEY=****(TMDB API Authorization)`
 - **Adım 4: Npm Yükleme:** `npm install`
 - **Adım 5: Derleme ve Çalıştırma:** `npm run dev, npm run start`
