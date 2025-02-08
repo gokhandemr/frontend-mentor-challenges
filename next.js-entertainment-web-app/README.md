@@ -4,9 +4,9 @@
 
 Bu proje, [Frontend Mentor](https://www.frontendmentor.io/) platformunda 'Advanced' kategorisindeki Entertainment Web App challenge'ı temel alınarak geliştirilmiştir.
 
-Challange Sayfası: https://www.frontendmentor.io/solutions/entertainment-web-app-nextjs-tmdb-api-7krBzxIGAo
+Çözüm Sayfası: https://www.frontendmentor.io/solutions/entertainment-web-app-nextjs-tmdb-api-7krBzxIGAo
 
-Demo: https://entertainment-web-app-beryl-tau.vercel.app/
+Demo: https://advanced-entertainment-web-app.vercel.app/
 
 ---
 
