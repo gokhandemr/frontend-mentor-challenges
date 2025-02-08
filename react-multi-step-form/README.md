@@ -4,9 +4,9 @@
 
 Bu proje, ["Frontend Mentor"](https://www.frontendmentor.io/challenges?difficulty=4) sitesine ait 4 adımdan oluşan ve her bir adımında farklı form yapılarını kullanmayı sağlayan, tasarımı olabildiğince istenilene yakın hale getirme imkanı sunan bir kodlama alıştırmasıdır.
 
-Uygulama Sayfası: https://www.frontendmentor.io/solutions/multi-step-form-react-vite-HQln62G1yr
+Çözüm Sayfası: https://www.frontendmentor.io/solutions/multi-step-form-react-vite-HQln62G1yr
 
-Demo: https://frontend-mentor-advanced-challenges-multi-step-form.vercel.app/
+Demo: https://advanced-multi-step-form.vercel.app/
 
 ---
 
@@ -26,10 +26,10 @@ Demo: https://frontend-mentor-advanced-challenges-multi-step-form.vercel.app/
 ---
 
 ### Kurulum ve Kullanım:
-- **Adım 1: Klonlama:** `git clone https://github.com/gokhandemr/frontend-mentor-advanced-challenges.git`
-- **Adım 2: Proje Klasörünü Açma:** `cd frontend-mentor-advanced-challenges/react-multi-step-form/`
+- **Adım 1: Klonlama:** `git clone https://github.com/gokhandemr/frontend-mentor-challenges.git`
+- **Adım 2: Proje Klasörünü Açma:** `cd frontend-mentor-challenges/react-multi-step-form/`
 - **Adım 3: Npm Yükleme:** `npm install`
-- **Adım 4: Çalıştırma:** `npm run dev`
+- **Adım 4: Çalıştırma:** `npm run start`
 
 ---
 
