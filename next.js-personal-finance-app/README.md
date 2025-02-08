@@ -42,8 +42,8 @@ Bu proje, Frontend Mentor platformunda 'Guru' kategorisindeki Entertainment Pers
 ---
 
 ## Kurulum ve Kullanım:
-* Adım 1: `git clone https://github.com/gokhandemr/frontend-mentor-guru-challenges.git`
-* Adım 2: `cd frontend-mentor-guru-challenges/next.js-personal-finance-app`
+* Adım 1: `git clone https://github.com/gokhandemr/frontend-mentor-challenges.git`
+* Adım 2: `cd frontend-mentor-challenges/next.js-personal-finance-app`
 * Adım 3: `npm install`
 * Adım 4: `npm run start`
 
