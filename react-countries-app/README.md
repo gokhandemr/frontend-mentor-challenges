@@ -28,8 +28,8 @@ Demo: https://advanced-countries-app.vercel.app/
 ---
 
 ### Kurulum ve Kullanım:
-- **Adım 1: Klonlama:** `git clone https://github.com/gokhandemr/frontend-mentor-advanced-challenges.git`
-- **Adım 2: Proje Klasörünü Açma:** `cd frontend-mentor-advanced-challenges/react-countries-app/`
+- **Adım 1: Klonlama:** `git clone https://github.com/gokhandemr/frontend-mentor-challenges.git`
+- **Adım 2: Proje Klasörünü Açma:** `cd frontend-mentor-challenges/react-countries-app/`
 - **Adım 3: Npm Yükleme:** `npm install`
 - **Adım 4: Çalıştırma:** `npm run start`
 
