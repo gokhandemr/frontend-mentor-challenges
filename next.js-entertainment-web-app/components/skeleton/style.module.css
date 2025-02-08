@@ -1,0 +1,48 @@
+.loader {
+    width: 100%;
+    height: 230px;
+    display: inline-block;
+    background:
+        linear-gradient(0.25turn, transparent, #192036, transparent),
+        linear-gradient(var(--semi-dark-blue), var(--semi-dark-blue)),
+        linear-gradient(#1e2641, #1e2641),
+        linear-gradient(#1e2641, #1e2641);
+    background-color: var(--semi-dark-blue);
+    background-repeat: no-repeat;
+    background-size: 215px 220px, 100% 130px, 100px 15px, 150px 15px;
+    background-position: -215px 0, 0 0, 15px 150px, 15px 180px;
+    animation: loading 1.5s infinite;
+    border-radius: 8px;
+}
+
+@keyframes loading {
+    to {
+        background-position: 215px 0, 0 0, 15px 150px, 15px 180px;
+    }
+}
+
+/* *Responsive Tablet */
+@media (max-width: 1023px) {
+    .loader {
+        height: 140px;
+    }
+
+    .trendingCard {
+        height: 230px;
+    }
+}
+
+
+
+/* *Responsive Mobile */
+@media (max-width: 767px) {
+    .loader {
+        height: 110px;
+    }
+
+    .trendingCard {
+        width: 240px;
+        height: 140px;
+        margin-right: 16px;
+    }
+}

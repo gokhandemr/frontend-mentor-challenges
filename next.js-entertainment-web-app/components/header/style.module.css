@@ -1,0 +1,113 @@
+.container {
+    width: 96px;
+    height: calc(100vh - 64px);
+    position: sticky;
+    top: 32px;
+    left: 0;
+    margin-right: 36px;
+    background-color: var(--semi-dark-blue);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 0;
+    z-index: 100;
+}
+
+.container .logo {
+    position: relative;
+    display: block;
+    z-index: 1;
+    margin-bottom: 75px;
+}
+
+.container .navLinks ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .navLinks ul li {
+    margin-bottom: 40px;
+}
+
+.container .navLinks ul li:last-child {
+    margin-bottom: 0;
+}
+
+.container .navLinks ul li.active a {
+    filter: brightness(8);
+}
+
+.container .navLinks ul li:hover a,
+.container .navLinks ul li.active>a {
+    filter: invert(0.0) sepia(10) saturate(3) hue-rotate(309deg)
+}
+
+.container>div:last-child img {
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+
+/* Responsive */
+@media (max-width: 1023px) {
+    .container {
+        width: calc(100% - 48px);
+        height: 72px;
+        position: fixed;
+        top: 24px;
+        left: 24px;
+        right: 24px;
+        padding: 24px;
+        flex-direction: row;
+        border-radius: 10px;
+    }
+
+    .container .logo {
+        margin-bottom: 0;
+    }
+
+    .container .navLinks ul {
+        flex-direction: row;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+    }
+
+    .container .navLinks ul li {
+        margin-bottom: 0;
+        margin-right: 24px;
+    }
+
+    .container .navLinks ul li:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        height: 56px;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-radius: 0;
+    }
+
+    .container .navLinks ul li img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .container>div:last-child img {
+        width: 32px;
+        height: 32px;
+    }
+}

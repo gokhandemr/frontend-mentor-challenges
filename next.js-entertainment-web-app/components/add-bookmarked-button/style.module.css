@@ -1,0 +1,28 @@
+.container {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #0000007a;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px 0px #60606062;
+    z-index: 20;
+    transition: all .4s;
+}
+
+.container:hover {
+    background: #fff;
+}
+
+.container:hover>img {
+    filter: brightness(0)
+}
+
+.singlePage {
+    top: 36px;
+    right: 48px;
+}

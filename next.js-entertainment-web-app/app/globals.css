@@ -1,0 +1,149 @@
+:root {
+  --red: #FC4747;
+  --dark-blue: #10141E;
+  --light-blue: #5A698F;
+  --semi-dark-blue: #161D2F;
+  --white: #f3f3f3;
+
+  --heading-large: 32px;
+  --heading-medium: 24px;
+  --heading-small: 24px;
+  --heading-xsmall: 18px;
+  --body-small: 13px;
+  --body-medium: 15px;
+
+  --light-weight: 300;
+  --medium-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: var(--body-medium);
+  font-weight: var(--light-weight);
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 64px);
+  padding-top: 32px;
+  margin: auto;
+  color: var(--white);
+}
+
+main {
+  width: calc(100% - (96px + 36px));
+}
+
+main.single-page {
+  height: calc(100vh - (96px + 32px + 32px));
+  padding: 48px;
+  background-color: var(--semi-dark-blue);
+  border-radius: 8px;
+}
+
+.not-found {
+  width: 100%;
+}
+
+.not-found p {
+  margin: 16px 0;
+}
+
+/* Loading */
+.loading {
+  width: 100%;
+  height: calc(100vh - 160px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.loader {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#f24442 50px, transparent 0),
+    linear-gradient(#f24442 50px, transparent 0),
+    linear-gradient(#f24442 50px, transparent 0),
+    linear-gradient(#f24442 50px, transparent 0),
+    linear-gradient(#f24442 50px, transparent 0),
+    linear-gradient(#f24442 50px, transparent 0);
+  background-size: 5px 40px;
+  background-position: 0px center, 10px center, 20px center, 30px center, 40px center, 50px center;
+  animation: spikeUp 1s linear infinite alternate;
+}
+
+@keyframes spikeUp {
+  0% {
+    background-size: 5px 40px
+  }
+
+  16% {
+    background-size: 5px 55px, 5px 40px, 5px 40px, 5px 40px, 5px 40px, 5px 40px
+  }
+
+  33% {
+    background-size: 5px 40px, 5px 55px, 5px 40px, 5px 40px, 5px 40px, 5px 40px
+  }
+
+  50% {
+    background-size: 5px 40px, 5px 40px, 5px 55px, 5px 40px, 5px 40px, 5px 40px
+  }
+
+  66% {
+    background-size: 5px 40px, 5px 40px, 5px 40px, 5px 55px, 5px 40px, 5px 40px
+  }
+
+  83% {
+    background-size: 5px 40px, 5px 40px, 5px 40px, 5px 40px, 5px 55px, 5px 40px
+  }
+
+  100% {
+    background-size: 5px 40px, 5px 40px, 5px 40px, 5px 40px, 5px 40px, 5px 55px
+  }
+}
+
+
+
+
+
+/* *Responsive Tablet */
+@media (max-width: 1023px) {
+  body {
+    width: calc(100% - 50px);
+    padding-top: 96px;
+  }
+
+  main {
+    width: 100%;
+  }
+}
+
+/* *Responsive Mobile */
+@media (max-width: 767px) {
+  body {
+    padding-top: 56px;
+    width: calc(100% - 32px);
+  }
+}

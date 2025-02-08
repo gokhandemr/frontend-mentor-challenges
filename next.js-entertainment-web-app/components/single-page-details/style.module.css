@@ -1,0 +1,155 @@
+.container {
+    width: 100%;
+    height: calc(75vh - 168px);
+    padding: 36px 48px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-bottom: 24px;
+    background: #171d30;
+    border-radius: 8px;
+    transition: all .3s;
+}
+
+.container img {
+    object-fit: cover;
+}
+
+/* Backdrop */
+.backdrop {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .4;
+    animation: backdrop .8s;
+}
+
+@keyframes backdrop {
+    from {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Poster */
+.poster {
+    width: 20%;
+    height: 100%;
+    margin-right: 24px;
+    position: relative;
+    border-radius: 8px;
+    animation: poster 3s;
+    z-index: 10;
+}
+
+.poster img {
+    object-fit: contain;
+    object-position: left bottom;
+}
+
+@keyframes poster {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+
+/* Details */
+.details {
+    width: calc(80% - 24px);
+    min-height: 50%;
+    padding-top: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    animation: details 5s;
+    z-index: 10;
+}
+
+@keyframes details {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.details h1 {
+    font-size: var(--heading-large);
+    margin-bottom: 16px;
+}
+
+.details .tagline {
+    color: #999;
+    margin-bottom: 8px;
+}
+
+.details .overview {
+    font-size: var(--heading-xsmall);
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.details .detailsBottom {
+    display: flex;
+}
+
+.details .detailsBottom p {
+    color: #999;
+    margin-right: 24px;
+}
+
+/* Loading */
+.loading {
+    animation: loading 1.5s infinite;
+    background:
+        linear-gradient(0.25turn, transparent, #1c243b, transparent);
+    background-color: var(--semi-dark-blue);
+}
+
+@keyframes loading {
+    to {
+        background-position: 100vw 0;
+    }
+}
+
+
+/* *Responsive */
+@media (max-width: 1023px) {
+    .container {
+        height: calc(100vh - (80px + 56px + 56px));
+        padding: 16px 24px;
+    }
+
+    .backdrop {
+        opacity: 1;
+    }
+
+    .poster {
+        display: none;
+    }
+
+    .details {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+}
