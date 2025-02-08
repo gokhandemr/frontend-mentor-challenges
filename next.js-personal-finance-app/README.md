@@ -7,8 +7,8 @@ Bu proje, Frontend Mentor platformunda 'Guru' kategorisindeki Entertainment Pers
 ---
 
 ## Demo ve Challenge'a Ait Çözüm Sayfası
-* Challenge Sayfası: https://www.frontendmentor.io/solutions/personal-finance-app-nextjs-15-typescript-7ZqsYtzh7o
-* Demo: https://personal-finance-app-lake.vercel.app/
+* Çözüm Sayfası: https://www.frontendmentor.io/solutions/personal-finance-app-nextjs-15-typescript-7ZqsYtzh7o
+* Demo: https://guru-personal-finance-app.vercel.app/
 
 ---
 
