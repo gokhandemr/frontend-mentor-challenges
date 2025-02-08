@@ -6,7 +6,7 @@ Bu proje, kullanıcıların alışveriş sepetlerini etkin bir şekilde yönetme
 
 Projeye Ait Çözüm Sayfası: https://www.frontendmentor.io/solutions/audiophile-e-commerce-website-nextjs-LFFoIHi7az
 
-Demo: https://audiophile-ecommerce-green.vercel.app/
+Demo: https://guru-audiophile-ecommerce.vercel.app/
 
 ---
 
@@ -30,7 +30,7 @@ Demo: https://audiophile-ecommerce-green.vercel.app/
 - **Adım 1: Klonlama:** `git clone https://github.com/gokhandemr/frontend-mentor-guru-challenges.git`
 - **Adım 2: Proje Klasörünü Açma:** `cd frontend-mentor-guru-challenges/next.js-audiophile-ecommerce`
 - **Adım 3: Npm Yükleme:** `npm install`
-- **Adım 4: Çalıştırma:** `npm run dev`
+- **Adım 4: Çalıştırma:** `npm run start`
 
 ---
 
