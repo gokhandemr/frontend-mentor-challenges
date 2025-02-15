@@ -56,7 +56,7 @@ export const Input = styled.input.attrs({ type: 'checkbox' })`
   border-radius: 4px;
   border: 1px solid var(--neutral-600);
   &[type='checkbox']:checked {
-    background: url('../../../src/assets/images/icon-check.svg') no-repeat center var(--purple-400);
+    background: url('../../../public/icon-check.svg') no-repeat center var(--purple-400);
     border-color: transparent;
   }
   &[type='checkbox']:checked::after {
