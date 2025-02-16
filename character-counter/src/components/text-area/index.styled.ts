@@ -52,17 +52,41 @@ export const Input = styled.input.attrs({ type: 'checkbox' })`
   width: 16px;
   height: 16px;
   margin-right: 12px;
-  appearance: none;
   border-radius: 4px;
   border: 1px solid var(--neutral-600);
-  &[type='checkbox']:checked {
-    background: url('../../../public/icon-check.svg') no-repeat center var(--purple-400);
-    border-color: transparent;
+  background: transparent;
+  cursor: pointer;
+  &[type="checkbox"]:checked {
+    background-color: var(--purple-500);
+    border: none;
   }
-  &[type='checkbox']:checked::after {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  &[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0 10px 0 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 1px solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+  }
+  &[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  }
+  &[type="checkbox"]:checked::before {
+    transform: scale(1);
+    background-color: CanvasText;
   }
 `;
 

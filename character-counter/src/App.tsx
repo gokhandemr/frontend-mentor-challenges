@@ -9,6 +9,13 @@ import Title from './components/title/index.tsx';
 import TextArea from './components/text-area/index.tsx';
 import LetterDensity from './components/letter-density/index.tsx';
 import Stats from './components/stats/index.tsx';
+// Images, Logo, Icons
+import darkBackground from './assets/images/bg-dark-theme.png'
+import lightBackground from './assets/images/bg-light-theme.png'
+import darkLogo from './assets/images/logo-dark-theme.svg'
+import lightLogo from './assets/images/logo-light-theme.svg'
+import iconSun from './assets/images/icon-sun.svg'
+import iconMoon from './assets/images/icon-moon.svg'
 
 function App() {
   const [darkTheme, setDarkTheme] = useState<boolean>(
@@ -21,11 +28,11 @@ function App() {
   useEffect(() => localStorage.setItem('dark-theme', JSON.stringify(darkTheme)), [darkTheme]);
 
   const theme = {
-    background: darkTheme ? '../src/assets/images/bg-dark-theme.png' : '../src/assets/images/bg-light-theme.png',
-    logo: darkTheme ? '../src/assets/images/logo-dark-theme.svg' : '../src/assets/images/logo-light-theme.svg',
+    background: darkTheme ? darkBackground : lightBackground,
+    logo: darkTheme ? darkLogo : lightLogo,
     color: darkTheme ? 'var(--neutral-100)' : 'var(--neutral-900)',
     themeButton: {
-      icon: darkTheme ? '../src/assets/images/icon-sun.svg' : '../src/assets/images/icon-moon.svg',
+      icon: darkTheme ? iconSun : iconMoon,
       background: darkTheme ? 'var(--neutral-700)' : 'var(--neutral-100)',
     },
     textArea: {

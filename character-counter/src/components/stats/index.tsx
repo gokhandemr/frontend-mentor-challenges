@@ -4,6 +4,10 @@ import {StatsContainer} from './index.styled';
 import {StatsTypes} from '../../types';
 // Components
 import Stat from './stat';
+// Images
+import patternChar from '../../assets/images/pattern-character-count.svg';
+import patternWord from '../../assets/images/pattern-word-count.svg';
+import patternSentence from '../../assets/images/pattern-sentence-count.svg';
 
 export default function Stats({textAreaValue, excludeSpaces}: StatsTypes) {
   const stats = [
@@ -11,7 +15,7 @@ export default function Stats({textAreaValue, excludeSpaces}: StatsTypes) {
       title: `Total Characters${excludeSpaces ? ' (no space)' : ''}`,
       value: excludeSpaces ? textAreaValue.replace(/ /g, '').length : textAreaValue.length,
       background: 'var(--purple-400)',
-      image: '../src/assets/images/pattern-character-count.svg',
+      image: patternChar,
     },
     {
       title: 'Word Count',
@@ -20,13 +24,13 @@ export default function Stats({textAreaValue, excludeSpaces}: StatsTypes) {
         .split(' ')
         .filter((c) => c.match(/[^\s|\s$]/)).length,
       background: 'var(--yellow-500)',
-      image: '../src/assets/images/pattern-word-count.svg',
+      image: patternWord,
     },
     {
       title: 'Sentence Count',
       value: textAreaValue.trim() !== '' ? textAreaValue.trim().split(/[.!?]\s+/).length : 0,
       background: 'var(--orange-500)',
-      image: '../src/assets/images/pattern-sentence-count.svg',
+      image: patternSentence,
     },
   ];
 

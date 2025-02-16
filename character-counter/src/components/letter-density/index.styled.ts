@@ -11,6 +11,7 @@ export const ListItem = styled.div`
   justify-content: space-between;
   margin-bottom: 12px;
   font: var(--text-preset-4);
+  transition: all .2s;
   & > p:first-child {
     width: 16px;
   }
@@ -42,6 +43,12 @@ export const ListItem = styled.div`
   &:last-of-type {
     margin-bottom: 20px;
   }
+
+&:hover> .bar{
+  transform: scale(1.01);
+  transition: all .2s;
+  cursor: pointer;
+}
 `;
 
 export const ToogleSeeButton = styled.button`

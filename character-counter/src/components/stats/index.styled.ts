@@ -13,6 +13,8 @@ export const StatContainer = styled.div`
   width: calc(33.333% - 8px);
   margin-right: 16px;
   padding: 16px;
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,9 +25,15 @@ export const StatContainer = styled.div`
   & > h4 {
     font: var(--text-preset-1);
     margin-bottom: 8px;
+    z-index: 10 ;
   }
   & > p {
     font: var(--text-preset-3);
+    z-index: 10 ;
+  }
+  & > img {
+    position: absolute;
+    right: -10%;
   }
   & {
     transition: transform 0.3s ease, box-shadow 0.3s ease;

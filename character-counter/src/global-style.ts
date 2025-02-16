@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   :root {
@@ -34,6 +34,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all .3s;
   }
 
   ::-webkit-scrollbar {
@@ -60,7 +61,6 @@ export const GlobalStyle = createGlobalStyle`
     background: url(${(props) => props.theme.background}) repeat;
     transition: all .3s;
     animation: moveBackground 30s infinite alternate ease-in-out;
-
   }
   @keyframes moveBackground {
     0% { background-position: 0% 0%; }
