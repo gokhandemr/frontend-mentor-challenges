@@ -5,8 +5,8 @@
 Bu proje, Frontend Mentor platformunda 'Junior' kategorisindeki Character counter challenge'ı temel alınarak geliştirilmiştir.
 
 ## Demo ve Challenge'a Ait Çözüm Sayfası
-* Çözüm Sayfası: 
-* Demo: 
+* Çözüm Sayfası: https://www.frontendmentor.io/solutions/character-counter-react-vite-typescript-styled-components-iGQrRyV62i
+* Demo: https://character-counter-pearl.vercel.app/
 
 ## Proje Hakkında
 * Karakter, kelime ve cümle sayılarını analiz etme
@@ -25,7 +25,7 @@ Bu proje, Frontend Mentor platformunda 'Junior' kategorisindeki Character counte
 * styled-components
 
 ## Kurulum ve Kullanım:
-* Adım 1: `git clone `
+* Adım 1: `git clone https://github.com/gokhandemr/frontend-mentor-challenges.git`
 * Adım 2: `cd frontend-mentor-challenges/character-counter`
 * Adım 3: `npm install`
 * Adım 4: `npm run start`
