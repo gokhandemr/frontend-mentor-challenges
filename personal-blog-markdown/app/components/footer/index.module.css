@@ -1,0 +1,37 @@
+.container {
+  width: calc(100% - 18px);
+  padding: 16px 10px 32px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: var(--neutral-200);
+  transition: all 0.3s ease;
+}
+body[data-type='dark-theme'] .container {
+  border-color: var(--neutral-700);
+}
+.container::before {
+  content: '';
+  width: auto;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 8px;
+  right: 8px;
+  background: var(--neutral-200);
+  transition: all 0.3s ease;
+}
+body[data-type='dark-theme'] .container::before {
+  background: var(--neutral-700);
+}
+
+.container p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.2px;
+}

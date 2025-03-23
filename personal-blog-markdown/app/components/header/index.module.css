@@ -1,0 +1,165 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css';
+
+.container {
+  width: 100%;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--neutral-0);
+  box-shadow: 0 6px 10px rgba(123, 123, 123, 0.03), inset 0 0 0 1px var(--neutral-200);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+body[data-type='dark-theme'] .container {
+  background-color: var(--neutral-800);
+  box-shadow: 0 6px 10px rgba(123, 123, 123, 0.03), inset 0 0 0 1px var(--neutral-700);
+}
+
+.container > :nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  margin-right: 20px;
+}
+
+.nav ul li a.active,
+.nav ul li:hover a {
+  box-shadow: inset 0 -3px var(--blue-500);
+  animation: active 0.5s ease;
+}
+@keyframes active {
+  from {
+    box-shadow: inset 0 0px var(--blue-500);
+  }
+  to {
+    box-shadow: inset 0 -3px var(--blue-500);
+  }
+}
+
+.nav ul li {
+  margin-right: 24px;
+}
+
+.nav ul li:last-child {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+body[data-type='dark-theme'] .nav ul li a {
+  color: var(--neutral-400);
+}
+
+.nav ul li a.active {
+  color: var(--neutral-700);
+}
+body[data-type='dark-theme'] .nav ul li a.active {
+  color: var(--neutral-0);
+}
+
+.themeButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--neutral-100);
+  box-shadow: inset 0 0 0 1px var(--neutral-200);
+  border-radius: 8px;
+}
+.themeButton.darkThemeStyle {
+  background-color: var(--neutral-900);
+  box-shadow: inset 0 0 0 1px var(--neutral-700);
+}
+.themeButton.darkThemeStyle:hover img {
+  filter: drop-shadow(0 0 8px white);
+  transition: all 0.3s;
+}
+.themeButton:hover img {
+  filter: drop-shadow(0 0 8px black);
+  transition: all 0.3s;
+}
+
+.mobileButton {
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+  .nav ul {
+    display: none;
+  }
+
+  .mobileButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    background-color: transparent;
+  }
+  body[data-type='dark-theme'] .mobileButton img {
+    filter: brightness(10);
+  }
+  .closeButtonStyle {
+    background-color: var(--neutral-700);
+    border-radius: 10px;
+  }
+
+  /* Menu'yu açar */
+  .nav .mobileButton.closeButtonStyle ~ ul {
+    padding: 12px;
+    margin: 12px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    border-radius: 10px;
+  }
+  .nav ul {
+    background-color: var(--neutral-0);
+    box-shadow: 0 6px 10px rgba(123, 123, 123, 0.03), inset 0 0 0 1px var(--neutral-200);
+  }
+  body[data-type='dark-theme'] .nav ul {
+    background-color: var(--neutral-800);
+    box-shadow: 0 6px 10px rgba(123, 123, 123, 0.03), inset 0 0 0 1px var(--neutral-700);
+  }
+
+  .nav ul li {
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--neutral-200);
+  }
+  body[data-type='dark-theme'] .nav ul li {
+    border-color: var(--neutral-700);
+  }
+
+  .nav ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.2px;
+  }
+  .nav ul li a.active {
+    box-shadow: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.5px;
+  }
+}

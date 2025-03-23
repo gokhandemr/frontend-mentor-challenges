@@ -1,0 +1,193 @@
+.container .contentHtml {
+  display: flex;
+  flex-direction: column;
+}
+
+.container hr {
+  background-color: var(--neutral-200);
+  border: none;
+  height: 1px;
+  margin: 20px 0 32px 0;
+}
+body[data-type='dark-theme'] .container hr {
+  background-color: var(--neutral-700);
+}
+
+.title {
+  margin-bottom: 12px;
+}
+
+.date {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.2px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+
+.container p {
+  margin-bottom: 12px;
+}
+
+.container blockquote {
+  margin: 0 0 12px 0;
+}
+.container blockquote p {
+  position: relative;
+  margin: 0;
+  padding: 6px 12px;
+  border-left: 4px solid var(--neutral-400);
+}
+
+.container ol,
+.container ul {
+  padding-left: 30px;
+  margin-bottom: 12px;
+}
+.container ol li,
+.container ul li {
+  list-style: decimal;
+  margin-bottom: 12px;
+}
+.container ul li {
+  list-style: disc;
+}
+.container ol li:last-child,
+.container ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Warning, Tip, Information bloklarını renklendirme */
+.container > #warning {
+  color: red;
+}
+.container p[data-type='warning'],
+.container p[data-type='tip'],
+.container p[data-type='info'] {
+  padding: 12px 12px 12px 44px;
+  border: 1px solid;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.container p[data-type='warning'] > strong:nth-child(2),
+.container p[data-type='tip'] > strong:nth-child(2),
+.container p[data-type='info'] > strong:nth-child(2) {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -0.5px;
+}
+
+.container p[data-type='warning'] > img:first-child,
+.container p[data-type='tip'] > img:first-child,
+.container p[data-type='info'] > img:first-child {
+  position: absolute;
+  left: 12px;
+  top: 16px;
+}
+
+.container p[data-type='warning'] {
+  background-color: var(--yellow-200);
+  border-color: var(--yellow-500);
+}
+.container p[data-type='tip'] {
+  background-color: var(--green-200);
+  border-color: var(--green-500);
+}
+.container p[data-type='info'] {
+  background-color: var(--blue-200);
+  border-color: var(--blue-500);
+}
+
+body[data-type='dark-theme'] .container p[data-type='warning'] {
+  background-color: var(--yellow-900);
+  border-color: var(--yellow-700);
+}
+body[data-type='dark-theme'] .container p[data-type='tip'] {
+  background-color: var(--green-900);
+  border-color: var(--green-700);
+}
+body[data-type='dark-theme'] .container p[data-type='info'] {
+  background-color: var(--blue-900);
+  border-color: var(--blue-800);
+}
+
+/* Highlight.js code bloklarını renklendirme */
+.container pre code {
+  display: block;
+  margin-bottom: 12px;
+  overflow-x: auto;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: var(--neutral-200);
+}
+.container code {
+  padding: 4px;
+  background-color: var(--neutral-300);
+  border-radius: 4px;
+  font-family: Fira_Code, Fira_Code Fallback, monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 146%;
+  letter-spacing: -0.4px;
+}
+body[data-type='dark-theme'] .container code {
+  background-color: var(--neutral-700);
+}
+
+body[data-type='dark-theme'] .container pre code {
+  background-color: var(--neutral-800);
+}
+
+/* Table Ayarları */
+.container table {
+  border: 1px solid;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px var(--neutral-200);
+  border-radius: 8px;
+  border-collapse: collapse;
+}
+body[data-type='dark-theme'] .container table {
+  box-shadow: 0 0 0 1px var(--neutral-700);
+}
+.container th,
+.container td {
+  text-align: left;
+  border: 1px solid var(--neutral-200);
+  padding: 6px 12px;
+}
+body[data-type='dark-theme'] .container th,
+body[data-type='dark-theme'] .container td {
+  border-color: var(--neutral-700);
+}
+.container th {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.5px;
+}
+.container td {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.2px;
+}
+
+@media screen and (max-width: 767px) {
+  .container table {
+    width: 100%;
+    overflow-x: scroll;
+    display: block;
+    border: none;
+  }
+}

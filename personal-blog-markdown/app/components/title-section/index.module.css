@@ -1,0 +1,24 @@
+.container {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  display: flex;
+}
+.title::after {
+  content: '';
+  width: 40px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  box-shadow: 0 3px var(--blue-500);
+}
+
+.description {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--neutral-200);
+}
+body[data-type='dark-theme'] .description {
+  border-color: var(--neutral-700);
+}

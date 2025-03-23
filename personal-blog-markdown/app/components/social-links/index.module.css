@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+.social {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-0);
+  border-radius: 1px solid var(--neutral-200);
+  border-radius: 10px;
+  box-shadow: 0 0 2px rgba(72, 77, 91, 0.4);
+  transition: background 0.3s ease;
+}
+.social:hover {
+  filter: contrast(0.5);
+}
+.social:last-child {
+  margin: 0;
+}
+body[data-type='dark-theme'] .social {
+  background-color: var(--neutral-800);
+}
+body[data-type='dark-theme'] .social img {
+  filter: brightness(10);
+}
+.footerStyle .social {
+  width: auto;
+  height: auto;
+  background-color: transparent!important;
+  box-shadow: none;
+}
