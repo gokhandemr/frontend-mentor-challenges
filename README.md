@@ -86,6 +86,14 @@ Bu repo, Frontend Mentor sitesine ait projeleri içermektedir.
 –
 [Repo Konumu](https://github.com/gokhandemr/frontend-mentor-challenges/tree/main/room-homepage)
 
+- **Personal Blog with Markdown**  
+*Next.js + TypeScript*  
+[Demo](https://personal-blog-markdown.vercel.app/) 
+–
+[Solution](https://www.frontendmentor.io/solutions/personal-blog-with-markdown-nextjs-typescript-3LmX_oLkuJ)
+–
+[Repo Konumu](https://github.com/gokhandemr/frontend-mentor-challenges/tree/main/personal-blog-markdown)
+
 ## **Junior Kategorisi**
 - **Character Counter**  
 *React + Vite + TypeScript + styled-components*  
