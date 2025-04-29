@@ -86,6 +86,14 @@ Bu repo, Frontend Mentor sitesine ait projeleri içermektedir.
 –
 [Repo Konumu](https://github.com/gokhandemr/frontend-mentor-challenges/tree/main/room-homepage)
 
+- **In-browser markdown editor**
+*Next.js + TypeScript + Tailwind CSS + Zustand*  
+[Demo](https://markdown-editor-fm.netlify.app/) 
+–
+[Solution](https://www.frontendmentor.io/solutions/in-browser-markdown-editor-nextjs-typescript-tailwind-zustand-MBFZimxkaX)
+–
+[Repo Konumu](https://github.com/gokhandemr/frontend-mentor-challenges/tree/main/in-browser-markdown-editor)
+
 - **Personal Blog with Markdown**  
 *Next.js + TypeScript*  
 [Demo](https://personal-blog-markdown.vercel.app/) 
