@@ -36,7 +36,6 @@ export default function RootLayout({
         <Sidebar />
         <div className='flex flex-wrap w-full content-start overflow-hidden'>
           <Header />
-          <MarkdownEditor />
           {children}
         </div>
       </body>
