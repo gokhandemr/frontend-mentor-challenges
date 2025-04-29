@@ -1,0 +1,194 @@
+@import 'tailwindcss';
+
+@theme {
+  --breakpoint-xs: 20rem;
+}
+
+:root {
+  --color-1000: #151619;
+  --color-900: #1d1f22;
+  --color-800: #2b2d31;
+  --color-700: #35393f;
+  --color-600: #5a6069;
+  --color-500: #7c8187;
+  --color-400: #c1c4cb;
+  --color-300: #e4e4e4;
+  --color-200: #f5f5f5;
+  --color-100: #ffffff;
+  --orange: #e46643;
+  --orange-hover: #f39765;
+}
+
+body {
+  color: var(--color-100);
+  display: flex;
+  width: 100dvw;
+  height: 100dvh;
+  overflow: hidden;
+  font-family: var(--font-roboto), sans-serif;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+  overflow: hidden;
+}
+
+body.sidebar-active > div {
+  transform: translateX(250px);
+}
+body > div {
+  transform: translateX(0px);
+}
+
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 0.1s;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-700);
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: var(--font-roboto-slab), sans-serif;
+}
+
+h2 {
+  font-weight: normal;
+}
+h6 {
+  color: var(--orange);
+}
+
+.htmlContent > p {
+  color: var(--color-500);
+  margin-bottom: 20px;
+}
+
+.htmlContent > ol,
+.htmlContent > ul,
+.htmlContent > blockquote,
+.htmlContent > pre {
+  margin-bottom: 20px;
+}
+
+.htmlContent > ol {
+  list-style-type: decimal;
+  padding-left: 36px;
+}
+
+.htmlContent > ul {
+  list-style-type: disc;
+  padding-left: 36px;
+}
+
+.htmlContent > blockquote {
+  width: 100%;
+  border-left: 4px solid var(--orange);
+  background-color: var(--color-200);
+  color: var(--color-900);
+  padding: 24px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.htmlContent a {
+  text-decoration: underline;
+}
+
+.htmlContent > pre {
+  background-color: var(--color-200);
+  padding: 24px;
+  border-radius: 4px;
+}
+
+.htmlContent code {
+  color: var(--color-700);
+  font-size: 14px;
+}
+
+textarea,
+.htmlContent code {
+  font-family: var(--font-roboto-mono), monospace;
+}
+
+/* DarkMode */
+.darkMode.htmlContent h1,
+.darkMode.htmlContent h3,
+.darkMode.htmlContent h4,
+.darkMode.htmlContent h5 {
+  color: white;
+}
+
+.darkMode.htmlContent h2 {
+  color: var(--color-100);
+}
+
+.darkMode.htmlContent blockquote {
+  background-color: var(--color-800);
+  color: white;
+}
+
+.darkMode.htmlContent > pre {
+  background-color: var(--color-800);
+  color: var(--color-100);
+}
+
+.darkMode.htmlContent code {
+  color: var(--color-100);
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* Dikey scroll için genişlik */
+  height: 8px; /* Yatay scroll için yükseklik */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-300);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-500);
+  border-radius: 0;
+}
+
+.active::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--color-100);
+  position: absolute;
+  left: -4px;
+  top: -4px;
+}
